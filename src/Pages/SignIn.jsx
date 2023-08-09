@@ -1,8 +1,9 @@
 
 import React, { useState } from 'react';
-import { BrowserRouter as Router,Routes,Route, Link, NavLink } from "react-router-dom";
+import { BrowserRouter as Router,Routes,Route, Link } from "react-router-dom";
 import {AiFillEyeInvisible,AiFillEye} from 'react-icons/ai'
 import OAth from '../Components/OAth';
+
 export default function SignIn() {
 
     const[showPassword,setShowPassword]=useState(false);
@@ -19,8 +20,7 @@ export default function SignIn() {
             ...prevState,
             [e.target.id]: e.target.value,
         }))
-    }
-
+    } 
   return (
     <section>
         <h1 className='text-3xl text-center mt-6 font-bold'>Sign in</h1>
@@ -29,7 +29,7 @@ export default function SignIn() {
                 <img className='w-full rounded-3xl' src="https://images.unsplash.com/flagged/photo-1564767609342-620cb19b2357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2V5fGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" alt="" />
             </div>
             <div className='w-full  md:w-[67%] lg:w-[40%]  lg:ml-20 '>
-            <form action="">
+            <form>
                     <input className=' w-full mb-6 px-4 py-2 text-x; text-gray-700 bg-white border-gray-300 rounded transition ease-in-out' placeholder='Enter your email'  type="email" id='email' value={email} onChange={onChange} />
             
 

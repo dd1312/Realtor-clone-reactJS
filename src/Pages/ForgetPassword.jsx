@@ -7,7 +7,7 @@ export default function ForgetPassword() {
     const[email,setEmail]=useState("");
 
   function onChange(e){
-    SetEmail(e.target.value);
+    setEmail(e.target.value)
   }
 
   return (
